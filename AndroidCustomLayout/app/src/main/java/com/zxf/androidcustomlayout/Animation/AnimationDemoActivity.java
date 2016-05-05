@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class AnimationDemoActivity extends Activity implements View.OnClickListe
     private TextView tv;
     //缩放动画
     private Button bt_scale;
+    private Button bt_scale_class;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,9 @@ public class AnimationDemoActivity extends Activity implements View.OnClickListe
         setContentView(R.layout.activity_animationdemo);
         tv = (TextView) findViewById(R.id.tv_animationDemo);
         bt_scale = (Button) findViewById(R.id.bt_animation_scale);
+        bt_scale_class = (Button) findViewById(R.id.bt_animation_scale_1);
         bt_scale.setOnClickListener(this);
+        bt_scale_class.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +38,12 @@ public class AnimationDemoActivity extends Activity implements View.OnClickListe
             case R.id.bt_animation_scale:
                 Animation scale= AnimationUtils.loadAnimation(this,R.anim.scaleanim);
                 tv.startAnimation(scale);
+                break;
+            case R.id.bt_animation_scale_1:
+                RotateAnimation rotateAnim = new RotateAnimation(0, -650, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+                rotateAnim.setDuration(3000);
+                rotateAnim.setFillAfter(true);
+                tv.startAnimation(rotateAnim);
                 break;
 
         }
