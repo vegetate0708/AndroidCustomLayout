@@ -21,4 +21,16 @@
         android:text="代码设置动画"
         android:layout_toRightOf="@id/bt_animation_scale"
         />
+    <Button
+        android:id="@+id/bt_animation_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bt_animation_scale_1"
+        android:text="Frame逐帧动画"/>
+    <ImageView
+        android:id="@+id/iv_animation_frame"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@anim/frameanimation"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
