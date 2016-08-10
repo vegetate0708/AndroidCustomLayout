@@ -16,6 +16,7 @@
         </activity>
         <activity android:name=".ScollerView.LockDemo"/>
         <activity android:name=".Animation.AnimationDemoActivity"/>
+        <activity android:name=".CanvasAndPaint.CanvasActivity"/>
     </application>
 
 </manifest>

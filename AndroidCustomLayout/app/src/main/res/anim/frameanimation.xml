@@ -3,21 +3,21 @@
     android:oneshot="false">
 <item
     android:drawable="@drawable/scenery1"
-    android:duration="60"/>
+    android:duration="1000"/>
  <item
         android:drawable="@drawable/scenery2"
-        android:duration="60"
+        android:duration="1000"
         />
     <item
         android:drawable="@drawable/scenery3"
-        android:duration="60"
+        android:duration="1000"
         />
     <item
         android:drawable="@drawable/scenery4"
-        android:duration="60"
+        android:duration="1000"
         />
     <item
         android:drawable="@drawable/scenery5"
-        android:duration="60"
+        android:duration="1000"
         />
 </animation-list>
