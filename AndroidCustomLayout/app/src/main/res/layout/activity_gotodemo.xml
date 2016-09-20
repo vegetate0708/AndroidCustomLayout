@@ -22,6 +22,12 @@
                 android:layout_height="wrap_content"
                 android:text="菜单弹出效果动画"
                 android:gravity="center"/>
+            <Button
+                android:id="@+id/bt_gotodemo_circleDemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="转盘旋转抽奖"
+                android:gravity="center"/>
         </LinearLayout>
     </ScrollView>
 

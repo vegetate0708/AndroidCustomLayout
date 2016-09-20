@@ -20,6 +20,7 @@
         <activity android:name=".Animator.AnimatorDemoActivity"/>
         <activity android:name=".GotoDemoActivity"/>
         <activity android:name=".Animator.Demo.ShowAndHideMenoActivity"/>
+        <activity android:name=".Animation.Demo.CircleDemo.CircleActivity"/>
     </application>
 
 </manifest>
