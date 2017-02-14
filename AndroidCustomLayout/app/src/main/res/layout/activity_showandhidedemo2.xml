@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zxf.androidcustomlayout.Animator.Demo.MyRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <com.zxf.androidcustomlayout.Animator.Demo.ShowAndHideView
+        android:id="@+id/showandhide_my"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/menu"
+        >
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/circle1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle1"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/circle2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle2"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/circle3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle3"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/circle4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circle4"/>
+    </com.zxf.androidcustomlayout.Animator.Demo.ShowAndHideView>
+</com.zxf.androidcustomlayout.Animator.Demo.MyRelativeLayout>

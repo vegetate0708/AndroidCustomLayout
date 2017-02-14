@@ -47,6 +47,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="自定义实例"/>
+            <Button
+                android:id="@+id/bt_main_expandlistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="可扩展ExpandListView"/>
         </LinearLayout>
     </ScrollView>
 

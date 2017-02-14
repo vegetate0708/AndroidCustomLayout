@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.zxf.androidcustomlayout.Animation.AnimationDemoActivity;
 import com.zxf.androidcustomlayout.Animator.AnimatorDemoActivity;
 import com.zxf.androidcustomlayout.CanvasAndPaint.CanvasActivity;
+import com.zxf.androidcustomlayout.Listview.ExpandListViewActivity;
 import com.zxf.androidcustomlayout.ScollerView.LockDemo;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.bt_main_canvasandpaint).setOnClickListener(this);
         findViewById(R.id.bt_main_animator).setOnClickListener(this);
         findViewById(R.id.bt_main_gotoDemo).setOnClickListener(this);
+        findViewById(R.id.bt_main_expandlistview).setOnClickListener(this);
     }
 
     @Override
@@ -52,6 +54,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_main_gotoDemo:
                 Intent gotodemo= new Intent(MainActivity.this, GotoDemoActivity.class);
                 startActivity(gotodemo);
+                break;
+            case R.id.bt_main_expandlistview:
+                Intent expandlistview= new Intent(MainActivity.this, ExpandListViewActivity.class);
+                startActivity(expandlistview);
+                break;
         }
     }
 }

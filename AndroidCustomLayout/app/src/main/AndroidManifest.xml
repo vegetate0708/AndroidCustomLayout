@@ -21,6 +21,9 @@
         <activity android:name=".GotoDemoActivity"/>
         <activity android:name=".Animator.Demo.ShowAndHideMenoActivity"/>
         <activity android:name=".Animation.Demo.CircleDemo.CircleActivity"/>
+        <activity android:name=".Listview.ExpandListViewActivity"/>
+        <activity android:name=".Animator.Demo.ShowAndHideDemo2Activity"/>
+        <activity android:name=".CanvasAndPaint.TimeListDemo.TimeListViewActivity"/>
     </application>
 
 </manifest>

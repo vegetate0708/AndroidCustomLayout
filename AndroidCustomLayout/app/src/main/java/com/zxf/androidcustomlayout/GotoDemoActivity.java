@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.zxf.androidcustomlayout.Animation.Demo.CircleDemo.CircleActivity;
+import com.zxf.androidcustomlayout.Animator.Demo.ShowAndHideDemo2Activity;
 import com.zxf.androidcustomlayout.Animator.Demo.ShowAndHideMenoActivity;
 
 /**
@@ -18,6 +19,7 @@ public class GotoDemoActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_gotodemo);
         findViewById(R.id.bt_gotodemo_caidandemo).setOnClickListener(this);
         findViewById(R.id.bt_gotodemo_circleDemo).setOnClickListener(this);
+        findViewById(R.id.bt_gotodemo_caidandemo2).setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +32,10 @@ public class GotoDemoActivity extends Activity implements View.OnClickListener {
             case R.id.bt_gotodemo_circleDemo:
                 Intent circledemo= new Intent(GotoDemoActivity.this, CircleActivity.class);
                 startActivity(circledemo);
+                break;
+            case R.id.bt_gotodemo_caidandemo2:
+                Intent showandhidedemo= new Intent(GotoDemoActivity.this, ShowAndHideDemo2Activity.class);
+                startActivity(showandhidedemo);
                 break;
         }
     }
