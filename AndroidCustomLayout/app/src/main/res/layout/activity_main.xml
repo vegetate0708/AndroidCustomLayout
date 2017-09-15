@@ -53,6 +53,24 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="可扩展ExpandListView"/>
+            <Button
+                android:id="@+id/bt_main_gesturedetector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="手势检测Gesturedetector"/>
+            <Button
+                android:id="@+id/bt_main_NestScrollDemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="NestScrollDemo"/>
+            <Button
+                android:id="@+id/bt_main_DesignDemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DesignDemo"/>
         </LinearLayout>
     </ScrollView>
 

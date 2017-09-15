@@ -33,6 +33,7 @@ public class TimeListAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public int getItemViewType(int position) {
+        //为Item设置type
         int size=datas.size()-1;
         if(size==0){
             return ItemType.NO;
@@ -47,7 +48,7 @@ public class TimeListAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-
+        holder.tv.setText(datas.get(position));
     }
 
     @Override
@@ -59,6 +60,7 @@ class MyViewHolder extends RecyclerView.ViewHolder{
     TextView tv;
     public MyViewHolder(View itemView,Context context,int type) {
         super(itemView);
+        tv= (TextView) itemView.findViewById(R.id.tv);
         TimeListView timeListView= (TimeListView) itemView.findViewById(R.id.tlv);
         if (type==ItemType.NO){
             timeListView.setmStartLine(null);

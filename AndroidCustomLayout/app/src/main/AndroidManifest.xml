@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zxf.androidcustomlayout">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +27,12 @@
         <activity android:name=".Listview.ExpandListViewActivity"/>
         <activity android:name=".Animator.Demo.ShowAndHideDemo2Activity"/>
         <activity android:name=".CanvasAndPaint.TimeListDemo.TimeListViewActivity"/>
+        <activity android:name=".PermissionsActivity"/>
+        <activity android:name=".ScollerView.GestureDetectorDemo"/>
+        <activity android:name=".ScollerView.NestedScroll.Nested1.NestedDemo1"/>
+        <activity android:name=".Design.Demo.Behavior.BehaviorActivity1"/>
+        <activity android:name=".Design.Demo.BehaviorAcitvityMain"/>
+        <activity android:name=".Design.Demo.CoodinatorLayout.zhihuDemo.ZhihuActivity"/>
     </application>
 
 </manifest>

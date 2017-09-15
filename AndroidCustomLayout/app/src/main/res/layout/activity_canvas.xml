@@ -11,4 +11,8 @@
         android:text="时间轴布局"
         android:gravity="center"
         android:textColor="@color/colorAccent"/>
+    <com.zxf.androidcustomlayout.CanvasAndPaint.Img.GifView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

@@ -18,6 +18,7 @@
         app:lineSize="2dp"
         />
     <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="这个是时间轴数据"

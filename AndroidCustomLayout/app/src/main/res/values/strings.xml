@@ -13,5 +13,11 @@
 柳永，你是一抹逍遥的白。你一生在笙歌中逍遥自得。不为案牍而劳形，不为卷简而心忧。低吟浅唱逍遥游，人生如此，岂不乐哉？
 你逍遥天地间，在白雪上留下浅印，连绵如我对你的爱慕。柳永，我对你在泛黄的书页中初见，在你的佳词妙句中初知。你站在三月的扬花下，眉目淡然。花开花落，群雁南归，你静静地立在书卷那端，白衣胜雪。
 若有一天时空交错光影重叠，我幸寻到你这一抹白，必为你撑一把碧里青伞，并肩看三秋桂子，十里荷花。</string>
+    <string name="permission">权限(permission)</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
 
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
 </resources>

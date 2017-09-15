@@ -21,11 +21,17 @@ public class TimeListView extends View {
     private Rect bounds;
 
     private void init(AttributeSet attrs){
+        //获取控件的属性集合
         TypedArray array=getContext().obtainStyledAttributes(attrs, R.styleable.TimeListView);
+        //中心圆大小
         mMakeSize=array.getDimensionPixelSize(R.styleable.TimeListView_circle,10);
+        //线段大小
         mLineSize=array.getDimensionPixelSize(R.styleable.TimeListView_lineSize,10);
+        //顶部线条
         mStartLine=array.getDrawable(R.styleable.TimeListView_startLine);
+        //底部线条
         mEndLine=array.getDrawable(R.styleable.TimeListView_endLine);
+        //中心圆
         mMaker=array.getDrawable(R.styleable.TimeListView_maker);
         array.recycle();
     }
@@ -33,21 +39,25 @@ public class TimeListView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        //获取中心圆以及距离左右的大小和
         int w=mMakeSize+getPaddingLeft()+getPaddingRight();
         int h=mMakeSize+getPaddingTop()+getPaddingBottom();
+        //将这个值与测量的控件大小进行比较得出较小的那个值从而确定具体控件的大小
         int widthsize=resolveSizeAndState(w,widthMeasureSpec,0);
         int heightsize=resolveSizeAndState(h,heightMeasureSpec,0);
+        //将这个值设置给控件大小
         setMeasuredDimension(widthsize,heightsize);
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
+        //获取左右上下的Padding值
         int pLeft=getPaddingLeft();
         int pRight=getPaddingRight();
         int pTop=getPaddingTop();
         int pBottom=getPaddingBottom();
-
+        //获取控件宽高
         int width=getWidth();
         int height=getHeight();
         //中心圆圈的矩形定位
